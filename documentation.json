@@ -1,0 +1,578 @@
+{
+	"info": {
+		"_postman_id": "d7a59111-ae4a-453f-b769-132bafe7caf7",
+		"name": "Pessoa Back-end Plena Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17661076",
+		"_collection_link": "https://crimson-shuttle-625033.postman.co/workspace/geral~522b3c8d-370d-4094-92b0-826c99fadeca/collection/17661076-d7a59111-ae4a-453f-b769-132bafe7caf7?action=share&source=collection_link&creator=17661076"
+	},
+	"item": [
+		{
+			"name": "Cidade",
+			"item": [
+				{
+					"name": "Listar cidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dominio}}/cidades",
+							"host": [
+								"{{dominio}}"
+							],
+							"path": [
+								"cidades"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "sao",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Listar cidades",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{dominio}}/cidades"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"nome\": \"Curitiba\",\n        \"estado\": \"PR\"\n    },\n    {\n        \"id\": 1,\n        \"nome\": \"Pelotas\",\n        \"estado\": \"RS\"\n    },\n    {\n        \"id\": 2,\n        \"nome\": \"São Paulo\",\n        \"estado\": \"SP\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Médico",
+			"item": [
+				{
+					"name": "Listar médicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dominio}}/medicos?nome=san",
+							"host": [
+								"{{dominio}}"
+							],
+							"path": [
+								"medicos"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "san"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Listar médicos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{dominio}}/medicos"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Jul 2023 13:04:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 11 Jul 2023 13:04:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 6,\n        \"nome\": \"Aurora Delgado\",\n        \"especialidade\": \"Dermatologia\",\n        \"cidade_id\": 2\n    },\n    {\n        \"id\": 2,\n        \"nome\": \"Cristina Ariane Grego\",\n        \"especialidade\": \"Neurologia\",\n        \"cidade_id\": 1\n    },\n    {\n        \"id\": 13,\n        \"nome\": \"Dayana Mônica Paz\",\n        \"especialidade\": \"Oftalmologia\",\n        \"cidade_id\": 5\n    },\n    {\n        \"id\": 3,\n        \"nome\": \"Dener Allan Verdugo Jr.\",\n        \"especialidade\": \"Dermatologia\",\n        \"cidade_id\": 1\n    },\n    {\n        \"id\": 8,\n        \"nome\": \"Dr. Milene Cristiana Ortiz Sobrinho\",\n        \"especialidade\": \"Neurologia\",\n        \"cidade_id\": 3\n    },\n    {\n        \"id\": 14,\n        \"nome\": \"Dr. Renan Fidalgo Domingues\",\n        \"especialidade\": \"Neurologia\",\n        \"cidade_id\": 5\n    },\n    {\n        \"id\": 15,\n        \"nome\": \"Juliana Léia Neves Jr.\",\n        \"especialidade\": \"Dermatologia\",\n        \"cidade_id\": 5\n    },\n    {\n        \"id\": 7,\n        \"nome\": \"Juliane Ortega\",\n        \"especialidade\": \"Oftalmologia\",\n        \"cidade_id\": 3\n    },\n    {\n        \"id\": 1,\n        \"nome\": \"Maiara Heloísa Benites Sobrinho\",\n        \"especialidade\": \"Oftalmologia\",\n        \"cidade_id\": 1\n    },\n    {\n        \"id\": 9,\n        \"nome\": \"Malu Malena Lozano\",\n        \"especialidade\": \"Dermatologia\",\n        \"cidade_id\": 3\n    },\n    {\n        \"id\": 5,\n        \"nome\": \"Nayara Carvalho Neto\",\n        \"especialidade\": \"Neurologia\",\n        \"cidade_id\": 2\n    },\n    {\n        \"id\": 10,\n        \"nome\": \"Otávio Yuri Delatorre\",\n        \"especialidade\": \"Oftalmologia\",\n        \"cidade_id\": 4\n    },\n    {\n        \"id\": 11,\n        \"nome\": \"Srta. Antonieta Daniella de Aguiar Filho\",\n        \"especialidade\": \"Neurologia\",\n        \"cidade_id\": 4\n    },\n    {\n        \"id\": 4,\n        \"nome\": \"Srta. Kelly Tatiane de Arruda\",\n        \"especialidade\": \"Oftalmologia\",\n        \"cidade_id\": 2\n    },\n    {\n        \"id\": 12,\n        \"nome\": \"Srta. Mariana Saraiva Sanches\",\n        \"especialidade\": \"Dermatologia\",\n        \"cidade_id\": 4\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Adicionar um novo médico",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Dra. Alessandra Moura\",\n    \"especialidade\": \"Neurologista\",\n    \"cidade_id\": {{id_cidade}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{dominio}}/medicos"
+					},
+					"response": [
+						{
+							"name": "Adicionar um novo médico",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Dra. Alessandra Moura\",\n    \"especialidade\": \"Neurologista\",\n    \"cidade_id\": {{id_cidade}}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{dominio}}/medicos"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"nome\": \"Dra. Alessandra Moura\",\n    \"especialidade\": \"Neurologista\",\n    \"cidade_id\": 2,\n    \"created_at\": \"2023-07-06 09:28:32\",\n    \"updated_at\": \"2023-07-06 09:28:32\",\n    \"deleted_at\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Listar médicos de uma cidade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{dominio}}/cidades/{{id_cidade}}/medicos"
+					},
+					"response": [
+						{
+							"name": "Listar médicos de uma cidade",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{dominio}}/cidades/{{id_cidade}}/medicos"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"nome\": \"Dr. Antônio Costa\",\n        \"especialidade\": \"Cardiologista\",\n        \"cidade_id\": 1\n    },\n    {\n        \"id\": 2,\n        \"nome\": \"Dra. Luisa Camargo\",\n        \"especialidade\": \"Cardiologista\",\n        \"cidade_id\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Agendar consulta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"medico_id\": 11,\n    \"paciente_id\": 3,\n    \"data\": \"2024-11-14 04:10:24\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{dominio}}/medicos/consulta"
+					},
+					"response": [
+						{
+							"name": "Agendar consulta",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"medico_id\": {{id_medico}},\n    \"paciente_id\": {{id_paciente}}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{dominio}}/medicos/consulta"
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1012,\n    \"medico_id\": 23,\n    \"paciente_id\": 48,\n    \"data\": \"2025-01-28 09:00:00\",\n    \"created_at\": \"2025-01-24 18:00:00\",\n    \"updated_at\": \"2025-01-24 18:00:00\",\n    \"deleted_at\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Listar pacientes do médico",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{dominio}}/medicos/{{id_medico}}/pacientes",
+							"host": [
+								"{{dominio}}"
+							],
+							"path": [
+								"medicos",
+								"{{id_medico}}",
+								"pacientes"
+							],
+							"query": [
+								{
+									"key": "apenas-agendadas",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Listar pacientes do médico",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{dominio}}/medicos/{{id_medico}}/pacientes"
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 103,\n        \"nome\": \"Luana Rodrigues\",\n        \"cpf\": \"662.669.840-08\",\n        \"celular\": \"(11) 9 8484-6363\",\n        \"created_at\": \"2023-07-06 09:36:28\",\n        \"updated_at\": \"2023-07-06 09:36:28\",\n        \"deleted_at\": null,\n        \"consulta\": {\n            \"id\": 101,\n            \"data\": \"2025-01-29 09:30:00\",\n            \"created_at\": \"2025-01-24 18:00:00\",\n            \"updated_at\": \"2025-01-24 18:00:00\",\n            \"deleted_at\": null\n        }\n    },\n    {\n        \"id\": 108,\n        \"nome\": \"Luiza Gonçalves\",\n        \"cpf\": \"491.075.050-94\",\n        \"celular\": \"(11) 9 8123-4567\",\n        \"created_at\": \"2023-07-06 09:37:59\",\n        \"updated_at\": \"2023-07-06 09:37:59\",\n        \"deleted_at\": null,\n        \"consulta\": {\n            \"id\": 82,\n            \"data\": \"2025-01-30 14:30:00\",\n            \"created_at\": \"2025-01-24 18:00:00\",\n            \"updated_at\": \"2025-01-24 18:00:00\",\n            \"deleted_at\": null\n        }\n    },\n    {\n        \"id\": 106,\n        \"nome\": \"Raul da Costa\",\n        \"cpf\": \"323.962.920-80\",\n        \"celular\": \"(11) 9 9876-5432\",\n        \"created_at\": \"2023-07-06 09:37:14\",\n        \"updated_at\": \"2023-07-06 09:37:14\",\n        \"deleted_at\": null,\n        \"consulta\": {\n            \"id\": 103,\n            \"data\": \"2025-01-29 11:00:00\",\n            \"created_at\": \"2025-01-24 18:00:00\",\n            \"updated_at\": \"2025-01-24 18:00:00\",\n            \"deleted_at\": null\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Atualizar paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Luana Rodrigues Garcia\",\n    \"celular\": \"(11) 98484-6362\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{dominio}}/pacientes/{{id_paciente}}"
+					},
+					"response": [
+						{
+							"name": "Atualizar paciente",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Luana Rodrigues Garcia\",\n    \"celular\": \"(11) 98484-6362\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{dominio}}/pacientes/{{id_paciente}}"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n        \"id\": {{id_paciente}},\n        \"nome\": \"Luana Rodrigues Garcia\",\n        \"cpf\": \"662.669.840-08\",\n        \"celular\": \"(11) 9 8484-6362\",\n        \"created_at\": \"2023-07-06 09:36:28\",\n        \"updated_at\": \"2023-07-06 09:44:03\",\n        \"deleted_at\": null\n    }"
+						}
+					]
+				},
+				{
+					"name": "Adicionar paciente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Matheus Henrique\",\n    \"cpf\": \"795.429.941-60\",\n    \"celular\": \"(11) 9 8432-5789\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{dominio}}/pacientes"
+					},
+					"response": [
+						{
+							"name": "Adicionar paciente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Matheus Henrique\",\n    \"cpf\": \"795.429.940-60\",\n    \"celular\": \"(11) 98432-5789\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{dominio}}/pacientes"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 111,\n    \"nome\": \"Matheus Henrique\",\n    \"cpf\": \"795.429.940-60\",\n    \"celular\": \"(11) 98432-5789\",\n    \"created_at\": \"2023-07-06 09:50:22\",\n    \"updated_at\": \"2023-07-06 09:50:22\",\n    \"deleted_at\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Autenticação",
+			"item": [
+				{
+					"name": "Usuário",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "{{dominio}}/user"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"christian.ramires@example.com\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{dominio}}/login"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "dominio",
+			"value": "http://127.0.0.1/api"
+		},
+		{
+			"key": "token",
+			"value": "{{vault:json-web-token}}"
+		},
+		{
+			"key": "id_cidade",
+			"value": "1"
+		},
+		{
+			"key": "id_medico",
+			"value": "1"
+		},
+		{
+			"key": "id_paciente",
+			"value": "103"
+		}
+	]
+}
