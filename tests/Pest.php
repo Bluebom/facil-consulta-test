@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Traits\SearchTrait;
+
 /*
 |--------------------------------------------------------------------------
 | Test Case
@@ -12,7 +14,8 @@
 */
 
 pest()->extend(Tests\TestCase::class)
- // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+    ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+    ->use(SearchTrait::class)
     ->in('Feature');
 
 /*
@@ -45,3 +48,7 @@ function something()
 {
     // ..
 }
+
+beforeEach(function () {
+    $this->artisan('db:seed');
+});
