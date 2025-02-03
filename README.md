@@ -16,7 +16,7 @@
 
     ./vendor/bin/sail artisan jwt:secret
 
-    ./vendor/bin/sail artisan migrate --seed
+    ./vendor/bin/sail artisan migrate:fresh --seed
 ```
 
 # Rode os testes
